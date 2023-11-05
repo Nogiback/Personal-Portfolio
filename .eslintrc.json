@@ -1,0 +1,26 @@
+{
+    "env": {
+      "browser": true,
+      "commonjs": true,
+      "es2021": true,
+      "jest": true
+    },
+    "extends": ["airbnb-base", "prettier"],
+    "parserOptions": {
+      "ecmaVersion": "latest"
+    },
+    "ignorePatterns": "main.js",
+    "rules": {
+      "no-console": "off",
+      "no-alert": "off",
+      "no-param-reassign": "warn",
+      "no-plusplus": "off",
+      "prefer-destructuring": "off",
+      "consistent-return": "off",
+      "no-unused-vars": "warn",
+      "no-loop-func": "off",
+      "no-use-before-define": "warn",
+      "radix": "off",
+      "default-case": "off",
+    }
+  }
