@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;500;700&display=swap');
+
+$shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+$darkershadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+$black: rgb(34, 40, 49);
+$grey: rgb(57, 62, 70);
+$teal: rgb(0, 173, 181);
+$lightgrey: rgb(238, 238, 238);
+$primary-font: 'Red Hat Display', sans-serif;
+$secondary-font: 'Noto Sans Mono', sans-serif;
+$font-weights: (
+  "light": 200,
+  "regular": 400,
+  "bold": 700
+);
+
+@function weight($weight-name) {
+  @return map-get($font-weights, $weight-name);
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: center;
+  align-items: center;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font: inherit;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $black;
+  color: $lightgrey;
+  line-height: 1.6;
+}

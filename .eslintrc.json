@@ -21,6 +21,6 @@
       "no-loop-func": "off",
       "no-use-before-define": "warn",
       "radix": "off",
-      "default-case": "off",
+      "default-case": "off"
     }
   }
