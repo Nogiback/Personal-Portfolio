@@ -1,15 +1,79 @@
-#content {
+#hero {
   @include flexCenter(column);
   position: absolute;
-  top: 45%;
-  width: 100vw;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 100vh;
 }
 
 #greeting {
-  font-size: 3rem;
-  font-weight: weight(bold);
+  position: relative;
+  font-size: 1.2rem;
+  animation: fadeIn 1.5s, scrollDown 1s forwards;
+}
+
+#name {
+  position: relative;
+  font-size: 5rem;
+  color: $teal;
+  animation: fadeIn 1.5s, scrollDown 1s forwards;
 }
 
 #tagline {
-  font-size: 1.5rem;
+  position: relative; 
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  animation: fadeIn 1.5s, scrollDown 1s forwards;
+}
+
+#scroll-btn {
+  position: relative;
+  padding: 0.6rem;
+  border: 2px solid $teal;
+  border-radius: 5px;
+  background: none;
+  color: $lightgrey;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: $darkershadow;
+  animation: fadeIn 1s forwards;
+  opacity: 0%;
+  animation-delay: 1s;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    background-color: $teal;
+    color: $black;
+  }
+
+  &:active {
+    top: 2px;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  } 
+}
+
+@keyframes scrollDown {
+  0% {
+    top: -100px;
+  }
+  100% {
+    top: 0px;
+  }
 }

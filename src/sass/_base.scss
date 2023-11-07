@@ -5,10 +5,10 @@ $shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 $darkershadow: 0 3px 6px rgba(0, 0, 0, 0.6);
 $black: rgb(34, 40, 49);
 $grey: rgb(57, 62, 70);
-$teal: rgb(0, 173, 181);
-$lightgrey: rgb(238, 238, 238);
-$primary-font: 'Red Hat Display', sans-serif;
-$secondary-font: 'Noto Sans Mono', sans-serif;
+$teal: rgb(29, 215, 225);
+$lightgrey: rgb(225, 223, 223);
+$primary-font: 'Noto Sans Mono', sans-serif;
+$secondary-font: 'Red Hat Display', sans-serif;
 $font-weights: (
   "light": 200,
   "regular": 400,
@@ -23,7 +23,7 @@ $font-weights: (
   display: flex;
   flex-direction: $direction;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
 }
 
 *,
