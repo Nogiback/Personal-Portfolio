@@ -19,11 +19,11 @@ $font-weights: (
   @return map-get($font-weights, $weight-name);
 }
 
-@mixin flexCenter($direction) {
+@mixin flex($direction, $alignment, $justify) {
   display: flex;
   flex-direction: $direction;
-  justify-content: center;
-  align-items: flex-start;
+  justify-content: $justify;
+  align-items: $alignment;
 }
 
 *,
@@ -44,4 +44,28 @@ body {
   background-color: $black;
   color: $lightgrey;
   line-height: 1.6;
+}
+
+section {
+  @include flex(row, center, center);
+  height: 100vh;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  } 
+}
+
+@keyframes scrollDown {
+  from {
+    top: -100px;
+  }
+  to {
+    top: 0px;
+  }
 }

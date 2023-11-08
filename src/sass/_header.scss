@@ -1,0 +1,98 @@
+#header {
+  @include flex(row, center, space-between);
+  //box-shadow: $shadow;
+  backdrop-filter: blur(10px);
+  padding: 0 3rem;
+  height: 90px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+#logo {
+  @include flex(row, center, center);
+  box-shadow: $darkershadow;
+  position: relative;
+  font-size: 2rem;
+  color: $black;
+  background-color: $teal;
+  padding: 0.6rem;
+  border: 2px solid;
+  border-radius: 10px;
+  transition: all 0.3s ease-in-out;
+  opacity: 0%;
+  animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
+  cursor: pointer;
+
+  a {
+    display: flex;
+    gap: 0.2rem;
+    text-decoration: none;
+    color: $black;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+
+  &:hover {
+    background-color: $black;
+    border: 2px solid $teal;
+    a {
+      color: $teal;
+    }
+  }
+}
+
+#tabs-container {
+  @include flex(row, center, center);
+  gap: 2rem;
+  background: none;
+
+  button {
+    background: none;
+    font-size: 0.9rem;
+
+    a {
+      text-decoration: none;
+      color: $lightgrey;
+      transition: color 0.3s ease-in-out;
+
+      span {
+        color: $teal;
+      }
+
+      &:hover {
+        color: $teal;
+        border-bottom: 1px solid $teal;
+      }
+    }
+  }
+}
+
+.active {
+  color: $teal;
+  border-bottom: 1px solid $teal;
+}
+
+#about-tab {
+  position: relative;
+  opacity: 0%;
+  animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
+  animation-delay: 0;
+}
+
+#projects-tab {
+  position: relative;
+  opacity: 0%;
+  animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
+  animation-delay: 0.1s;
+}
+
+#contact-tab {
+  position: relative;
+  opacity: 0%;
+  animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
+  animation-delay: 0.2s;
+}
