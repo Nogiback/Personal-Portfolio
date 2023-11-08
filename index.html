@@ -16,19 +16,46 @@
     <title>Nogiback Personal Portfolio</title>
   </head>
   <body>
-    <div id="hero">
-      <p id="greeting">Hello, my name is...</p>
-      <h1 id="name">Peter Do.</h1>
-      <h2 id="tagline">
-        Former environmental engineer. Current full stack development student.
-      </h2>
-      <button id="scroll-btn">
-        <a href="#about">
-          <span
-            >Learn more about me <i class="fa-solid fa-arrow-down"></i
-          ></span>
-        </a>
-      </button>
-    </div>
+    <header id="header">
+      <div id="logo">
+        <a href="#Hero"
+          ><i class="fa-solid fa-p"></i><i class="fa-solid fa-d"></i
+        ></a>
+      </div>
+      <nav id="tabs-container">
+        <button class="tab" id="about-tab">
+          <a href="#About"><span>01.</span> About</a>
+        </button>
+        <button class="tab" id="projects-tab">
+          <a href="#Projects"><span>02.</span> Projects</a>
+        </button>
+        <button class="tab" id="contact-tab">
+          <a href="#Contact"><span>03.</span> Contact</a>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <section id="Hero">
+        <div id="hero-details">
+          <p id="greeting">Hello, my name is...</p>
+          <h1 id="name">Peter Do.</h1>
+          <h2 id="tagline">
+            Former environmental engineer. Current full stack development
+            student.
+          </h2>
+          <button id="scroll-btn">
+            <a href="#about">
+              <span
+                >Learn more about me <i class="fa-solid fa-arrow-down"></i
+              ></span>
+            </a>
+          </button>
+        </div>
+      </section>
+      <section id="About">ABOUT SECTION</section>
+      <section id="Projects">PROJECTS SECTION</section>
+      <section id="Contact">CONTACT SECTION</section>
+    </main>
   </body>
 </html>
