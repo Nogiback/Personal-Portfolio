@@ -54,9 +54,15 @@ section {
           backdrop-filter: blur(10px);
   padding: 0 3rem;
   height: 90px;
-  position: sticky;
+  position: fixed;
   top: 0;
   z-index: 1;
+  width: calc(100% - 6rem);
+  transition: all 0.2s ease-in-out;
+}
+
+#header.hide {
+  top: -90px;
 }
 
 #logo {
@@ -164,6 +170,7 @@ section {
 
 #name {
   position: relative;
+  font-weight: 700;
   font-size: 5rem;
   color: rgb(29, 215, 225);
   opacity: 0%;
@@ -208,4 +215,119 @@ section {
 }
 #scroll-btn:active {
   top: 2px;
+}
+
+#about-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5rem;
+  gap: 3rem;
+}
+
+#about-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+#about-header::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: rgb(29, 215, 225);
+}
+
+#about-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-width: 12rem;
+}
+#about-title span {
+  color: rgb(29, 215, 225);
+}
+
+#about-details-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+}
+
+#about-info-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  font-size: 15px;
+}
+
+.about-text span {
+  color: rgb(29, 215, 225);
+}
+.about-text a {
+  text-decoration: none;
+  color: rgb(29, 215, 225);
+}
+.about-text a:hover {
+  text-decoration: underline;
+}
+
+#tech-stack-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: space-between;
+  gap: 2rem;
+  width: 100%;
+}
+
+.stack-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.tech-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+.tech-icon i {
+  font-size: 3rem;
+}
+.tech-icon span {
+  font-size: 0.9rem;
+}
+
+#about-info-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+#about-photo img {
+  filter: grayscale(100%);
+  max-width: 300px;
+  max-height: 300px;
+  border-radius: 150px;
+  border: 5px solid rgb(29, 215, 225);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+#about-photo img:hover {
+  filter: none;
 }/*# sourceMappingURL=main.css.map */
