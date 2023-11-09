@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="./styles/main.css" />
     <link
       rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css"
     />
     <script
       src="https://kit.fontawesome.com/3ef1768f2a.js"
       crossorigin="anonymous"
     ></script>
     <script src="main.js" defer></script>
-    <title>Nogiback Personal Portfolio</title>
+    <title>Peter Do | Full Stack Developer</title>
   </head>
   <body>
     <header id="header">
@@ -41,11 +41,10 @@
           <p id="greeting">Hello, my name is...</p>
           <h1 id="name">Peter Do.</h1>
           <h2 id="tagline">
-            Former environmental engineer. Current full stack development
-            student.
+            Former Environmental Engineer. Current Web Developer.
           </h2>
           <button id="scroll-btn">
-            <a href="#about">
+            <a href="#About">
               <span
                 >Learn more about me <i class="fa-solid fa-arrow-down"></i
               ></span>
@@ -53,7 +52,101 @@
           </button>
         </div>
       </section>
-      <section id="About">ABOUT SECTION</section>
+
+      <section id="About">
+        <div id="about-container">
+          <div id="about-header">
+            <h2 id="about-title"><span>01.</span> About Me</h2>
+          </div>
+          <div id="about-details-container">
+            <div id="about-info-left">
+              <p class="about-text">
+                Hi! My name is <span>Peter Do</span> (pronounced "Doh!" like Homer Simpson)
+                and I am an aspiring full stack web developer. My interest in
+                web development started back in high school when I would
+                customize my Tumblr and MySpace pages. Little did I know I was
+                using HTML/CSS to do so!
+              </p>
+              <p class="about-text">
+                After high school, I obtained my degree in
+                environmental engineering and spent 5 years in the industry, earning my P.Eng. designation. Ultimately, I decided to switch careers and dive back
+                into the world of web development! I am currently completing the Full Stack Web
+                Development curriculum at
+                <a href="https://www.theodinproject.com/">The Odin Project</a>.
+                I hope to complete it in the near future and join the world of
+                professional web development.
+              </p>
+              <p class="about-text">
+                Outside of web development, I am an avid disc golfer and enjoy the outdoors as much as I can. I also enjoy playing video games on my PC, getting together with friends, and playing music!
+              </p>
+            </div>
+            <div id="about-info-right">
+              <div id="about-photo">
+                <img
+                  src="./assets/3d-illustration-person-with-sunglasses_23-2149436180.avif"
+                  alt="3D illustration of person with sunglasses"
+                />
+              </div>
+            </div>
+          </div>
+          <div id="tech-stack-container">
+            <div class="stack-row" id="stack-row-one">
+              <div class="tech-icon">
+                <i class="devicon-html5-plain colored"></i>
+                <span class="tech-name">HTML</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-css3-plain colored"></i>
+                <span class="tech-namee">CSS</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-javascript-plain colored"></i>
+                <span class="tech-name">JS</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-sass-original colored"></i>
+                <span class="tech-name">SASS</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-react-original colored"></i>
+                <span class="tech-name">REACT</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-nodejs-plain colored"></i>
+                <span class="tech-name">NODE.JS</span>
+              </div>
+            </div>
+            <div class="stack-row" id="stack-row-two">
+              <div class="tech-icon">
+                <i class="devicon-git-plain colored"></i>
+                <span class="tech-name">GIT</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-jest-plain colored"></i>
+                <span class="tech-name">JEST</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-npm-original-wordmark colored"></i>
+                <span class="tech-name">NPM</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-webpack-plain colored"></i>
+                <span class="tech-name">WEBPACK</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-babel-plain colored"></i>
+                <span class="tech-name">BABEL</span>
+              </div>
+              <div class="tech-icon">
+                <i class="devicon-eslint-original colored"></i>
+                <span class="tech-name">ESLINT</span>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section id="Projects">PROJECTS SECTION</section>
       <section id="Contact">CONTACT SECTION</section>
     </main>

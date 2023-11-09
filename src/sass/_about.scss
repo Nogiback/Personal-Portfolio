@@ -1,0 +1,101 @@
+#about-container {
+  @include flex(column, flex-start, center);
+  padding: 0 5rem;
+  gap: 3rem;
+}
+
+#about-header {
+  @include flex(row, center, center);
+  padding-bottom: 1rem;
+  width: 100%;
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: $teal;
+  }
+}
+
+#about-title {
+  font-size: 1.5rem;
+  font-weight: weight(bold);
+  min-width: 12rem;
+
+  span {
+    color: $teal;
+  }
+}
+
+#about-details-container {
+  @include flex(row, center, center);
+  gap: 3rem;
+}
+
+#about-info-left {
+  @include flex(column, center, center);
+  gap: 2rem;
+  font-size: 15px;
+}
+
+.about-text{
+  span {
+    color: $teal;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $teal;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+#tech-stack-container {
+  @include flex(column, space-between, center);
+  gap: 2rem;
+  width: 100%;
+}
+
+.stack-row {
+  @include flex(row, center, space-around);
+}
+
+.tech-icon {
+  @include flex(column, center, center);
+  gap: 0.5rem;
+  
+  i {
+    font-size: 3rem;
+  }
+
+  span {
+    font-size: 0.9rem;
+  }
+}
+
+#about-info-right {
+  @include flex(column, center, center);
+  gap: 2rem;
+}
+
+#about-photo{
+  img {
+    filter: grayscale(100%);
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 150px;
+    border: 5px solid $teal;
+    box-shadow: $darkershadow;
+    transition: all 0.3s ease-in-out;
+
+    &:hover {
+      filter: none;
+    }
+  }
+}
