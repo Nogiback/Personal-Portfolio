@@ -1,0 +1,5 @@
+#project-cards-container {
+  @include flex(row, center, center);
+  gap: 1rem;
+  width: 100%;
+}

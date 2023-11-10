@@ -26,6 +26,38 @@ $font-weights: (
   align-items: $alignment;
 }
 
+.container {
+  @include flex(column, flex-start, center);
+  padding: 0 5rem;
+  gap: 3rem;
+}
+
+.subheader {
+  @include flex(row, center, center);
+  padding-bottom: 1rem;
+  width: 100%;
+
+  &::after {
+    content: "";
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-left: 1rem;
+    height: 1px;
+    background-color: $teal;
+  }
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: weight(bold);
+  min-width: 12rem;
+
+  span {
+    color: $teal;
+  }
+}
+
 *,
 *::before,
 *::after {
