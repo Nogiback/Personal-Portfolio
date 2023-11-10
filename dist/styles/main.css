@@ -25,7 +25,7 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
 }
 
@@ -43,6 +43,14 @@ section {
   }
   to {
     top: 0px;
+  }
+}
+@keyframes spin {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
   }
 }
 #header {
@@ -261,7 +269,8 @@ section {
   gap: 3rem;
 }
 
-#about-info-left {
+#about-info-left,
+#about-info-right {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -303,20 +312,18 @@ section {
   justify-content: center;
   align-items: center;
   gap: 0.5rem;
+  position: relative;
 }
 .tech-icon i {
   font-size: 3rem;
+  text-shadow: 2px 2px 5px black;
 }
 .tech-icon span {
   font-size: 0.9rem;
+  text-shadow: 2px 2px 5px black;
 }
-
-#about-info-right {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  gap: 2rem;
+.tech-icon:hover {
+  top: -2px;
 }
 
 #about-photo img {
@@ -330,4 +337,21 @@ section {
 }
 #about-photo img:hover {
   filter: none;
+  perspective: 500px;
+  animation: spin 1.3s linear;
+}
+
+@media only screen and (max-width: 950px) {
+  #about-container {
+    gap: 1rem;
+  }
+  #about-details-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  #about-photo img {
+    max-width: 200px;
+    max-height: 200px;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -35,7 +35,8 @@
   gap: 3rem;
 }
 
-#about-info-left {
+#about-info-left,
+#about-info-right {
   @include flex(column, center, center);
   gap: 2rem;
   font-size: 15px;
@@ -69,19 +70,21 @@
 .tech-icon {
   @include flex(column, center, center);
   gap: 0.5rem;
+  position: relative;
   
   i {
     font-size: 3rem;
+    text-shadow: 2px 2px 5px black;
   }
 
   span {
     font-size: 0.9rem;
+    text-shadow: 2px 2px 5px black;
   }
-}
 
-#about-info-right {
-  @include flex(column, center, center);
-  gap: 2rem;
+  &:hover {
+    top: -2px;
+  }
 }
 
 #about-photo{
@@ -96,6 +99,28 @@
 
     &:hover {
       filter: none;
+      perspective: 500px;
+      //transform: rotateY(45deg);
+      animation: spin 1.3s linear;
+    }
+  }
+}
+
+@media only screen and (max-width: 950px){
+  #about-container {
+    gap: 1rem;
+  }
+
+  #about-details-container {
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #about-photo {
+    img {
+    max-width: 200px;
+    max-height: 200px;
     }
   }
 }
