@@ -1,5 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;500;700&display=swap");
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 5rem;
+  gap: 3rem;
+}
+
+.subheader {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 1rem;
+  width: 100%;
+}
+.subheader::after {
+  content: "";
+  display: block;
+  position: relative;
+  width: 100%;
+  margin-left: 1rem;
+  height: 1px;
+  background-color: rgb(29, 215, 225);
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  font-weight: 700;
+  min-width: 12rem;
+}
+.subtitle span {
+  color: rgb(29, 215, 225);
+}
+
 *,
 *::before,
 *::after {
@@ -225,42 +261,6 @@ section {
   top: 2px;
 }
 
-#about-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 0 5rem;
-  gap: 3rem;
-}
-
-#about-header {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding-bottom: 1rem;
-  width: 100%;
-}
-#about-header::after {
-  content: "";
-  display: block;
-  position: relative;
-  width: 100%;
-  margin-left: 1rem;
-  height: 1px;
-  background-color: rgb(29, 215, 225);
-}
-
-#about-title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  min-width: 12rem;
-}
-#about-title span {
-  color: rgb(29, 215, 225);
-}
-
 #about-details-container {
   display: flex;
   flex-direction: row;
@@ -354,4 +354,12 @@ section {
     max-width: 200px;
     max-height: 200px;
   }
+}
+#project-cards-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
 }/*# sourceMappingURL=main.css.map */
