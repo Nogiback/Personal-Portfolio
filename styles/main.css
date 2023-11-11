@@ -1,5 +1,46 @@
 @import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Mono:wght@200;400;500;700&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font: inherit;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Noto Sans Mono", sans-serif;
+  background-color: rgb(34, 40, 49);
+  color: rgb(225, 223, 223);
+  line-height: 1.6;
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  font-size: 0.8rem;
+  opacity: 50%;
+  margin-bottom: 2rem;
+}
+
 .container {
   display: flex;
   flex-direction: column;
@@ -37,36 +78,6 @@
   color: rgb(29, 215, 225);
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-weight: normal;
-  font: inherit;
-  box-sizing: inherit;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: "Noto Sans Mono", sans-serif;
-  background-color: rgb(34, 40, 49);
-  color: rgb(225, 223, 223);
-  line-height: 1.6;
-}
-
-section {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh;
-  width: 100%;
-  margin: 3rem 0;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -83,12 +94,9 @@ section {
     top: 0px;
   }
 }
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
+@media only screen and (max-width: 950px) {
+  .container {
+    gap: 1rem;
   }
 }
 #header {
@@ -248,9 +256,6 @@ section {
 #scroll-btn a {
   text-decoration: none;
   color: inherit;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
   transition: transform 0.2s;
 }
 #scroll-btn:hover {
@@ -274,11 +279,14 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   gap: 2rem;
-  font-size: 15px;
+  font-size: 1.1rem;
 }
 
+.about-text {
+  font-family: "Red Hat Display", sans-serif;
+}
 .about-text span {
   color: rgb(29, 215, 225);
 }
@@ -297,6 +305,7 @@ section {
   align-items: space-between;
   gap: 2rem;
   width: 100%;
+  font-family: "Red Hat Display", sans-serif;
 }
 
 .stack-row {
@@ -319,7 +328,7 @@ section {
   text-shadow: 2px 2px 5px black;
 }
 .tech-icon span {
-  font-size: 0.9rem;
+  font-size: 0.8rem;
   text-shadow: 2px 2px 5px black;
 }
 .tech-icon:hover {
@@ -328,23 +337,20 @@ section {
 
 #about-photo img {
   filter: grayscale(100%);
-  max-width: 300px;
-  max-height: 300px;
-  border-radius: 150px;
-  border: 5px solid rgb(29, 215, 225);
+  width: 300px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgb(29, 215, 225);
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
   transition: all 0.3s ease-in-out;
 }
 #about-photo img:hover {
   filter: none;
-  perspective: 500px;
-  animation: spin 1.3s linear;
 }
 
 @media only screen and (max-width: 950px) {
-  #about-container {
-    gap: 1rem;
-  }
   #about-details-container {
     flex-direction: column;
     gap: 2rem;
@@ -353,6 +359,15 @@ section {
   #about-photo img {
     max-width: 200px;
     max-height: 200px;
+    border-radius: 100px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .tech-icon i {
+    font-size: 2rem;
+  }
+  .tech-icon span {
+    font-size: 0.5rem;
   }
 }
 #project-cards-container {
@@ -377,6 +392,7 @@ section {
   padding: 1rem;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
   border-radius: 5px;
+  font-family: "Red Hat Display", sans-serif;
 }
 .project-card:hover {
   top: -5px;
@@ -409,8 +425,8 @@ section {
 }
 .project-text .project-desc {
   text-align: center;
-  font-weight: 200;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  height: 80px;
 }
 
 .project-links {
@@ -428,4 +444,126 @@ section {
 }
 .project-links a:hover {
   color: rgb(29, 215, 225);
+}
+.project-links i {
+  text-shadow: 2px 2px 5px black;
+}
+
+@media only screen and (max-width: 708px) {
+  .project-card {
+    width: 400px;
+  }
+  .project-img,
+  .project-gif {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .project-card {
+    width: 300px;
+  }
+  .project-img,
+  .project-gif {
+    width: 100%;
+    height: 150px;
+  }
+}
+#contact-info-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  width: 100%;
+}
+
+#contact-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  font-family: "Red Hat Display", sans-serif;
+}
+#contact-left h3 {
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+#contact-left p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+#contact-right img {
+  filter: grayscale(100%);
+  width: 300px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid rgb(29, 215, 225);
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  transition: all 0.3s ease-in-out;
+}
+#contact-right img:hover {
+  filter: none;
+}
+
+#email-link-btn {
+  position: relative;
+  padding: 0.6rem;
+  border: 2px solid rgb(29, 215, 225);
+  border-radius: 5px;
+  background: none;
+  color: rgb(225, 223, 223);
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  font-family: "Noto Sans Mono", sans-serif;
+}
+#email-link-btn a {
+  text-decoration: none;
+  color: inherit;
+  transition: transform 0.2s;
+}
+#email-link-btn:hover {
+  background-color: rgb(29, 215, 225);
+  color: rgb(34, 40, 49);
+}
+#email-link-btn:active {
+  top: 2px;
+}
+
+#social-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#social-links a {
+  text-decoration: none;
+  color: rgb(225, 223, 223);
+  transition: color 0.3s ease-in-out;
+}
+#social-links a:hover {
+  color: rgb(29, 215, 225);
+}
+#social-links i {
+  font-size: 2.5rem;
+  text-shadow: 2px 2px 5px black;
+}
+
+@media only screen and (max-width: 950px) {
+  #contact-info-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+  #contact-right img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+  }
 }/*# sourceMappingURL=main.css.map */
