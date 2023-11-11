@@ -7,18 +7,23 @@
 
 .project-card {
   @include flex(column, center, center);
+  position: relative;
   gap: 1rem;
   width: 500px;
   background-color: $card;
   padding: 1rem;
   box-shadow: $darkershadow;
   border-radius: 5px;
+
+  &:hover {
+    top: -5px;
+  }
 }
 
 .project-img,
 .project-gif {
   width: 100%;
-  object-fit: cover;
+  height: 250px;
 }
 
 .project-img {
