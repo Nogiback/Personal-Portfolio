@@ -37,7 +37,7 @@
 
     <main>
       <section id="Hero">
-        <div id="hero-details">
+        <div id="hero-container">
           <p id="greeting">Hello, my name is...</p>
           <h1 id="name">Peter Do.</h1>
           <h2 id="tagline">
@@ -81,7 +81,7 @@
                 environmental engineering and spent 5 years in the industry, earning my P.Eng. designation. Ultimately, I decided to switch careers and dive back
                 into the world of web development! I am currently completing the Full Stack Web
                 Development curriculum at
-                <a href="https://www.theodinproject.com/">The Odin Project</a>.
+                <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>.
                 I hope to complete it in the near future and join the world of
                 professional web development.
               </p>
@@ -154,81 +154,95 @@
             <h2 class="subtitle" id="projects-title"><span>01.</span> Projects</h2>
           </div>
           <div id="project-cards-container">
-            <div class="project-card" id='card-1'>
+            <div class="project-card">
               <div class="project-preview">
-
+                <img class="project-img" src="./assets/Battleship-IMG.png" alt="preview of Battleship game web app">
+                <img class="project-gif" src="assets/Battleship-GIF.gif" alt="animated GIF of Battleship game web app">
               </div>
-              <div class="project-info">
-
+              <div class="project-text">
+                <h3 class='project-title'>Battleship</h3>
+                <p class='project-desc'>Javascript web application of the classic game Battleship versus AI. The Odin Project's capstone vanilla Javascript project.</p>
               </div>
-              <div class="project-buttons">
-                <button class="live-page-btn"><i class="fa-solid fa-circle-play"></i></button>
-                <button class="github-btn"><i class="fa-brands fa-github"></i></button>
+              <div class="project-links">
+                <a href="https://nogiback.github.io/Battleship/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                <a href="https://github.com/Nogiback/Battleship" target="_blank"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
-            <div class="project-card" id='card-2'>
+            <div class="project-card">
               <div class="project-preview">
-
+                <img class="project-img" src="./assets/To-Do-List-IMG.png" alt="preview of To Do List web app">
+                <img class="project-gif" src="assets/To-Do-List-GIF.gif" alt="animated GIF of To Do List web app">
               </div>
-              <div class="project-info">
-
+              <div class="project-text">
+                <h3 class='project-title'>To-Do-List</h3>
+                <p class='project-desc'>Basic To-Do-List web application using HTML/CSS, Javascript, ES6 modules, and webpack. The To-Do-List can add, remove, and edit projects and tasks.</p>
               </div>
-              <div class="project-buttons">
-                <button class="live-page-btn"><i class="fa-solid fa-circle-play"></i></button>
-                <button class="github-btn"><i class="fa-brands fa-github"></i></button>
+              <div class="project-links">
+                <a href="https://nogiback.github.io/To-Do-List/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                <a href="https://github.com/Nogiback/To-Do-List" target="_blank"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
-            <div class="project-card" id='card-3'>
+            <div class="project-card">
               <div class="project-preview">
-
+                <img class="project-img" src="./assets/Weather-App-IMG.png" alt="preview of weather web app">
+                <img class="project-gif" src="assets/Weather-App-GIF.gif" alt="animated GIF of weather web app">
               </div>
-              <div class="project-info">
-
+              <div class="project-text">
+                <h3 class='project-title'>Weather App</h3>
+                <p class='project-desc'>Basic weather web application using HTML/CSS, Javascript, and weatherAPI. Application provides real-time weather data for searched location.</p>
               </div>
-              <div class="project-buttons">
-                <button class="live-page-btn"><i class="fa-solid fa-circle-play"></i></button>
-                <button class="github-btn"><i class="fa-brands fa-github"></i></button>
+              <div class="project-links">
+                <a href="https://nogiback.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                <a href="https://github.com/Nogiback/Weather-App" target="_blank"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
-            <div class="project-card" id='card-4'>
+            <div class="project-card">
               <div class="project-preview">
-
+                <img class="project-img" src="./assets/Book-Library-IMG.png" alt="preview of book library web app">
+                <img class="project-gif" src="./assets/Book-Library-GIF.gif" alt="animated GIF of book library web app">
               </div>
-              <div class="project-info">
-
+              <div class="project-text">
+                <h3 class='project-title'>Book Library</h3>
+                <p class='project-desc'>Simple book library web application using HTML/CSS and Javascript. Book Library allows users to add and remove books onto local storage and keep track of read status.</p>
               </div>
-              <div class="project-buttons">
-                <button class="live-page-btn"><i class="fa-solid fa-circle-play"></i></button>
-                <button class="github-btn"><i class="fa-brands fa-github"></i></button>
+              <div class="project-links">
+                <a href="https://nogiback.github.io/Book-Library/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                <a href="https://github.com/Nogiback/Book-Library" target="_blank"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
-            <div class="project-card" id='card-5'>
+            <div class="project-card">
               <div class="project-preview">
-
+                <img class="project-img" src="./assets/Calculator-IMG.png" alt="preview of calculator web app">
+                <img class="project-gif" src="./assets/Calculator-GIF.gif" alt="animated GIF of book library web app">
               </div>
-              <div class="project-info">
-
+              <div class="project-text">
+                <h3 class='project-title'>Calculator</h3>
+                <p class='project-desc'>Simple calculator web application using HTML/CSS and Javascript. Your everyday calculator! Yes, the style was heavily inspired by the iPhone calculator app.</p>
               </div>
-              <div class="project-buttons">
-                <button class="live-page-btn"><i class="fa-solid fa-circle-play"></i></button>
-                <button class="github-btn"><i class="fa-brands fa-github"></i></button>
+              <div class="project-links">
+                <a href="https://nogiback.github.io/Calculator/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                <a href="https://github.com/Nogiback/Calculator" target="_blank"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
-            <div class="project-card" id='card-6'>
+            <div class="project-card">
               <div class="project-preview">
-
+                <img class="project-img" src="./assets/Etch-A-Sketch-IMG.png" alt="preview of etch-a-sketch web app">
+                <img class="project-gif" src="./assets/Etch-A-Sketch-GIF.gif" alt="animated GIF of etch-a-sketch web app">
               </div>
-              <div class="project-info">
-
+              <div class="project-text">
+                <h3 class='project-title'>Etch-A-Sketch</h3>
+                <p class='project-desc'>Fun Etch-A-Sketch web application using HTML/CSS and Javascript. The Etch-A-Sketch allows user to set the grid size and randomize the colors.</p>
               </div>
-              <div class="project-buttons">
-                <button class="live-page-btn"><i class="fa-solid fa-circle-play"></i></button>
-                <button class="github-btn"><i class="fa-brands fa-github"></i></button>
+              <div class="project-links">
+                <a href="https://nogiback.github.io/Etch-A-Sketch/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
+                <a href="https://github.com/Nogiback/Etch-A-Sketch" target="_blank"><i class="fa-brands fa-github"></i></a>
               </div>
             </div>
           </div>
         </div>
       </section>
+
+
       <section id="Contact">CONTACT SECTION</section>
     </main>
   </body>

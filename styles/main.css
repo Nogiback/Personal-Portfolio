@@ -4,9 +4,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
   padding: 0 5rem;
   gap: 3rem;
+  max-width: 1800px;
 }
 
 .subheader {
@@ -63,6 +64,7 @@ section {
   align-items: center;
   min-height: 100vh;
   width: 100%;
+  margin: 3rem 0;
 }
 
 @keyframes fadeIn {
@@ -121,7 +123,7 @@ section {
   background-color: rgb(29, 215, 225);
   padding: 0.6rem;
   border: 2px solid;
-  border-radius: 10px;
+  border-radius: 5px 20px 5px 20px;
   transition: all 0.3s ease-in-out;
   opacity: 0%;
   animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
@@ -196,12 +198,10 @@ section {
   animation-delay: 0.2s;
 }
 
-#hero-details {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 50%;
+#hero-container {
+  margin-top: -5rem;
+  padding: 0 5rem;
+  max-width: 1800px;
 }
 
 #greeting {
@@ -360,6 +360,69 @@ section {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
   width: 100%;
+}
+
+.project-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 500px;
+  background-color: rgb(26, 31, 39);
+  padding: 1rem;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+
+.project-img,
+.project-gif {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.project-img {
+  display: flex;
+}
+
+.project-gif {
+  display: none;
+}
+
+.project-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.project-text .project-title {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+.project-text .project-desc {
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.9rem;
+}
+
+.project-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.project-links a {
+  text-decoration: none;
+  color: rgb(225, 223, 223);
+  font-size: 2.5rem;
+  transition: color 0.3s ease-in-out;
+}
+.project-links a:hover {
+  color: rgb(29, 215, 225);
 }/*# sourceMappingURL=main.css.map */
