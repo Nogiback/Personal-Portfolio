@@ -3,6 +3,7 @@
 
 $shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
 $darkershadow: 0 3px 6px rgba(0, 0, 0, 0.6);
+$card: rgb(26, 31, 39);
 $black: rgb(34, 40, 49);
 $grey: rgb(57, 62, 70);
 $teal: rgb(29, 215, 225);
@@ -27,9 +28,10 @@ $font-weights: (
 }
 
 .container {
-  @include flex(column, flex-start, center);
+  @include flex(column, center, center);
   padding: 0 5rem;
   gap: 3rem;
+  max-width: 1800px;
 }
 
 .subheader {
@@ -82,6 +84,7 @@ section {
   @include flex(row, center, center);
   min-height: 100vh;
   width: 100%;
+  margin: 3rem 0;
 }
 
 @keyframes fadeIn {

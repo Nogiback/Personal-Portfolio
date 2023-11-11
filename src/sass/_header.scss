@@ -24,7 +24,7 @@
   background-color: $teal;
   padding: 0.6rem;
   border: 2px solid;
-  border-radius: 10px;
+  border-radius: 5px 20px 5px 20px;
   transition: all 0.3s ease-in-out;
   opacity: 0%;
   animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;

@@ -1,5 +1,62 @@
 #project-cards-container {
   @include flex(row, center, center);
-  gap: 1rem;
+  flex-wrap: wrap;
+  gap: 2rem;
   width: 100%;
+}
+
+.project-card {
+  @include flex(column, center, center);
+  gap: 1rem;
+  width: 500px;
+  background-color: $card;
+  padding: 1rem;
+  box-shadow: $darkershadow;
+  border-radius: 5px;
+}
+
+.project-img,
+.project-gif {
+  width: 100%;
+  object-fit: cover;
+}
+
+.project-img {
+  display: flex;
+}
+
+.project-gif {
+  display: none;
+}
+
+.project-text {
+  @include flex(column, center, center);
+  gap: 1rem;
+
+  .project-title {
+    font-weight: weight(bold);
+    font-size: 1.5rem;
+  }
+
+
+  .project-desc {
+    text-align: center;
+    font-weight: weight(light);
+    font-size: 0.9rem;
+  }
+}
+
+.project-links {
+  @include flex(row, center, center);
+  gap: 2rem;
+  a {
+    text-decoration: none;
+    color: $lightgrey;
+    font-size: 2.5rem;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $teal;
+    }
+  }
 }
