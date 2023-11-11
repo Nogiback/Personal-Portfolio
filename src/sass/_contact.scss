@@ -1,0 +1,101 @@
+#contact-info-container {
+  @include flex(row, center, center);
+  gap: 2rem;
+  width: 100%;
+}
+
+#contact-left {
+  @include flex(column, center, center);
+  gap: 3rem;
+  font-family: $secondary-font;
+
+  h3 {
+    font-size: 2.5rem;
+    font-weight: weight(bold);
+  }
+
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+#contact-right {
+  img {
+    filter: grayscale(100%);
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid $teal;
+    box-shadow: $darkershadow;
+    transition: all 0.3s ease-in-out;
+    &:hover {
+      filter: none;
+    }
+  }
+}
+
+#email-link-btn {
+  position: relative;
+  padding: 0.6rem;
+  border: 2px solid $teal;
+  border-radius: 5px;
+  background: none;
+  color: $lightgrey;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+  box-shadow: $darkershadow;
+  font-family: $primary-font;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    transition: transform 0.2s;
+  }
+
+  &:hover {
+    background-color: $teal;
+    color: $black;
+  }
+
+  &:active {
+    top: 2px;
+  }
+}
+
+#social-links {
+  @include flex(row, center, space-around);
+  width: 100%;
+
+  a {
+    text-decoration: none;
+    color: $lightgrey;
+    transition: color 0.3s ease-in-out;
+
+    &:hover {
+      color: $teal;
+    }
+  }
+
+  i {
+    font-size: 2.5rem;
+    text-shadow: 2px 2px 5px black;
+  }
+}
+
+@media only screen and (max-width: 950px){
+  #contact-info-container {
+    flex-direction: column-reverse;
+    gap: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  #contact-right {
+    img {
+    max-width: 200px;
+    max-height: 200px;
+    border-radius: 100px;
+    }
+  }
+}

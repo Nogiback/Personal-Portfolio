@@ -5,12 +5,14 @@
 
 #about-info-left,
 #about-info-right {
-  @include flex(column, center, center);
+  @include flex(column, flex-start, center);
   gap: 2rem;
-  font-size: 15px;
+  font-size: 1.1rem;
 }
 
 .about-text{
+  font-family: $secondary-font;
+
   span {
     color: $teal;
   }
@@ -29,6 +31,7 @@
   @include flex(column, space-between, center);
   gap: 2rem;
   width: 100%;
+  font-family: $secondary-font;
 }
 
 .stack-row {
@@ -46,7 +49,7 @@
   }
 
   span {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     text-shadow: 2px 2px 5px black;
   }
 
@@ -58,27 +61,21 @@
 #about-photo{
   img {
     filter: grayscale(100%);
-    max-width: 300px;
-    max-height: 300px;
-    border-radius: 150px;
-    border: 5px solid $teal;
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+    border: 2px solid $teal;
     box-shadow: $darkershadow;
     transition: all 0.3s ease-in-out;
 
     &:hover {
       filter: none;
-      perspective: 500px;
-      //transform: rotateY(45deg);
-      animation: spin 1.3s linear;
     }
   }
 }
 
 @media only screen and (max-width: 950px){
-  #about-container {
-    gap: 1rem;
-  }
-
   #about-details-container {
     flex-direction: column;
     gap: 2rem;
@@ -89,6 +86,19 @@
     img {
     max-width: 200px;
     max-height: 200px;
+    border-radius: 100px;
+    }
+  }
+}
+
+@media only screen and (max-width: 450px){
+  .tech-icon {
+    i {
+      font-size: 2rem;
+    }
+  
+    span {
+      font-size: 0.5rem;
     }
   }
 }

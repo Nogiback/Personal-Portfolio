@@ -27,6 +27,41 @@ $font-weights: (
   align-items: $alignment;
 }
 
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-weight: normal;
+  font: inherit;
+  box-sizing: inherit;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: $primary-font;
+  background-color: $black;
+  color: $lightgrey;
+  line-height: 1.6;
+}
+
+section {
+  @include flex(row, center, center);
+  min-height: 100vh;
+  width: 100%;
+  margin: 3rem 0;
+}
+
+footer {
+  @include flex(row, center, center);
+  width: 100%;
+  font-size: 0.8rem;
+  opacity: 50%;
+  margin-bottom: 2rem;
+}
+
 .container {
   @include flex(column, center, center);
   padding: 0 5rem;
@@ -60,33 +95,6 @@ $font-weights: (
   }
 }
 
-*,
-*::before,
-*::after {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font-weight: normal;
-  font: inherit;
-  box-sizing: inherit;
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: $primary-font;
-  background-color: $black;
-  color: $lightgrey;
-  line-height: 1.6;
-}
-
-section {
-  @include flex(row, center, center);
-  min-height: 100vh;
-  width: 100%;
-  margin: 3rem 0;
-}
-
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -105,11 +113,8 @@ section {
   }
 }
 
-@keyframes spin {
-  from {
-    transform: rotateY(0deg);
-  }
-  to {
-    transform: rotateY(360deg);
+@media only screen and (max-width: 950px){
+  .container {
+    gap: 1rem;
   }
 }
