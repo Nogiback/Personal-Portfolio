@@ -102,3 +102,9 @@
   animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
   animation-delay: 0.2s;
 }
+
+@media only screen and (max-width: 450px){
+  #header {
+    gap: 2rem;
+  }
+}
