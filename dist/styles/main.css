@@ -123,8 +123,9 @@ footer {
 }
 
 #header.hide,
-#hamburger-menu.hide {
-  top: -90px;
+#hamburger-menu.hide,
+#sidebar-menu.hide {
+  top: -240px;
 }
 
 #logo {
