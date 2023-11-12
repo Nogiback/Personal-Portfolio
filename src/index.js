@@ -1,5 +1,6 @@
 // Header hides on scroll down, reveals on scroll up
 const header = document.querySelector('#header');
+const hamburgerMenu = document.querySelector('#hamburger-menu');
 let lastScrollTop = 0;
 
 window.onscroll = function () {
@@ -11,8 +12,10 @@ function scrollHide() {
 
   if (scrollY > lastScrollTop) {
     header.classList.add('hide');
+    hamburgerMenu.classList.add('hide');
   } else {
     header.classList.remove('hide');
+    hamburgerMenu.classList.remove('hide');
   }
   lastScrollTop = scrollY <= 0 ? 0 : scrollY;
 }

@@ -10,7 +10,8 @@
   transition: all 0.2s ease-in-out;
 }
 
-#header.hide {
+#header.hide,
+#hamburger-menu.hide {
   top: -90px;
 }
 
@@ -107,25 +108,25 @@
     transition: all 1s ease-in-out;
     background: linear-gradient(
       to bottom,
-      $black, $black 10%, 
+      $clear, $clear 10%, 
       $lightgrey 10%, $lightgrey 20%, 
-      $black 20%, $black 40%, 
+      $clear 20%, $clear 40%, 
       $lightgrey 40%, $lightgrey 50%, 
-      $black 50%, $black 70%, 
+      $clear 50%, $clear 70%, 
       $lightgrey 70%, $lightgrey 80%,
-      $black 80%, $black 100%
+      $clear 80%, $clear 100%
     );
     
     &:hover {
       background: linear-gradient(
       to bottom,
-      $black, $black 10%, 
+      $clear, $clear 10%, 
       $teal 10%, $teal 20%, 
-      $black 20%, $black 40%, 
+      $clear 20%, $clear 40%, 
       $teal 40%, $teal 50%, 
-      $black 50%, $black 70%, 
+      $clear 50%, $clear 70%, 
       $teal 70%, $teal 80%,
-      $black 80%, $black 100%
+      $clear 80%, $clear 100%
     );
     }
 }
@@ -140,7 +141,6 @@
     transition: 0.3s;
     padding: 0px 10px;
     box-sizing: border-box;
-    //background-color: $black;
 }
 
 #hamburger-menu ul {

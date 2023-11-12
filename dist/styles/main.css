@@ -122,7 +122,8 @@ footer {
   transition: all 0.2s ease-in-out;
 }
 
-#header.hide {
+#header.hide,
+#hamburger-menu.hide {
   top: -90px;
 }
 
@@ -217,10 +218,10 @@ footer {
   padding: 0px;
   margin: 0px;
   transition: all 1s ease-in-out;
-  background: linear-gradient(to bottom, rgb(34, 40, 49), rgb(34, 40, 49) 10%, rgb(225, 223, 223) 10%, rgb(225, 223, 223) 20%, rgb(34, 40, 49) 20%, rgb(34, 40, 49) 40%, rgb(225, 223, 223) 40%, rgb(225, 223, 223) 50%, rgb(34, 40, 49) 50%, rgb(34, 40, 49) 70%, rgb(225, 223, 223) 70%, rgb(225, 223, 223) 80%, rgb(34, 40, 49) 80%, rgb(34, 40, 49) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 10%, rgb(225, 223, 223) 10%, rgb(225, 223, 223) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, rgb(225, 223, 223) 40%, rgb(225, 223, 223) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 70%, rgb(225, 223, 223) 70%, rgb(225, 223, 223) 80%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
 }
 #hamburger-menu:hover {
-  background: linear-gradient(to bottom, rgb(34, 40, 49), rgb(34, 40, 49) 10%, rgb(29, 215, 225) 10%, rgb(29, 215, 225) 20%, rgb(34, 40, 49) 20%, rgb(34, 40, 49) 40%, rgb(29, 215, 225) 40%, rgb(29, 215, 225) 50%, rgb(34, 40, 49) 50%, rgb(34, 40, 49) 70%, rgb(29, 215, 225) 70%, rgb(29, 215, 225) 80%, rgb(34, 40, 49) 80%, rgb(34, 40, 49) 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0) 10%, rgb(29, 215, 225) 10%, rgb(29, 215, 225) 20%, rgba(0, 0, 0, 0) 20%, rgba(0, 0, 0, 0) 40%, rgb(29, 215, 225) 40%, rgb(29, 215, 225) 50%, rgba(0, 0, 0, 0) 50%, rgba(0, 0, 0, 0) 70%, rgb(29, 215, 225) 70%, rgb(29, 215, 225) 80%, rgba(0, 0, 0, 0) 80%, rgba(0, 0, 0, 0) 100%);
 }
 
 #hamburger-menu #sidebar-menu {
