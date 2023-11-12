@@ -119,3 +119,10 @@ footer {
     padding: 0 2rem;
   }
 }
+
+@media only screen and (max-width: 500px) {
+  .subtitle {
+    font-size: 1.2rem;
+    min-width: 9rem;
+  }
+}

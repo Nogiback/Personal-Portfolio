@@ -100,6 +100,12 @@ footer {
     padding: 0 2rem;
   }
 }
+@media only screen and (max-width: 500px) {
+  .subtitle {
+    font-size: 1.2rem;
+    min-width: 9rem;
+  }
+}
 #header {
   display: flex;
   flex-direction: row;
@@ -249,17 +255,12 @@ footer {
   left: 0;
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 700px) {
   .nav-link {
     display: none;
   }
   #hamburger-menu {
-    display: inline;
-  }
-}
-@media only screen and (max-width: 450px) {
-  #tabs-container {
-    display: none;
+    display: flex;
   }
 }
 #hero-container {
