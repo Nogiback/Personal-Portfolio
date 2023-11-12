@@ -55,10 +55,8 @@ hamburger.addEventListener('change', transformHeader);
 
 function transformHeader(e) {
   if (this.checked) {
-    console.log('checked');
     header.style.height = '240px';
   } else {
-    console.log('not checked');
     header.style.height = '90px';
   }
 }

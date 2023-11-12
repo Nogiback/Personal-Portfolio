@@ -203,7 +203,7 @@ footer {
 #hamburger-menu {
   position: fixed;
   top: 20px;
-  right: 20px;
+  right: 3rem;
   width: 50px;
   height: 50px;
   display: none;
