@@ -22,19 +22,34 @@
           ><i class="fa-solid fa-p"></i><i class="fa-solid fa-d"></i
         ></a>
       </div>
-      <nav id="tabs-container">
-        <button class="tab" id="about-tab">
-          <a href="#About"><span>01.</span> About</a>
-        </button>
-        <button class="tab" id="projects-tab">
-          <a href="#Projects"><span>02.</span> Projects</a>
-        </button>
-        <button class="tab" id="contact-tab">
-          <a href="#Contact"><span>03.</span> Contact</a>
-        </button>
+      <nav id="nav-container">
+        <a class="nav-link" id="about-link" href="#About"
+          ><span>01.</span> About</a
+        >
+        <a class="nav-link" id="projects-link" href="#Projects"
+          ><span>02.</span> Projects</a
+        >
+        <a class="nav-link" id="contact-link" href="#Contact"
+          ><span>03.</span> Contact</a
+        >
+        <input type="checkbox" id="hamburger-input" class="burger-shower" />
+        <label id="hamburger-menu" for="hamburger-input">
+          <nav id="sidebar-menu">
+            <ul>
+              <li>
+                <a href="#About"><span>01.</span> About</a>
+              </li>
+              <li>
+                <a href="#Projects"><span>02.</span> Projects</a>
+              </li>
+              <li>
+                <a href="#Contact"><span>03.</span> Contact</a>
+              </li>
+            </ul>
+          </nav>
+        </label>
       </nav>
     </header>
-
     <main>
       <section id="Hero">
         <div id="hero-container">
@@ -55,8 +70,7 @@
 
       <section id="About">
         <div class="container" id="about-container">
-          <div class="subheader"
-           id="about-header">
+          <div class="subheader" id="about-header">
             <h2 class="subtitle" id="about-title"><span>01.</span> About Me</h2>
           </div>
           <div id="about-details-container">
@@ -70,23 +84,27 @@
             </div>
             <div id="about-info-right">
               <p class="about-text">
-                Hi! My name is <span>Peter Do</span> (pronounced "Doh!" like Homer Simpson)
-                and I am an aspiring full stack web developer based in Toronto, Ontario. My interest in
-                web development started back in high school when I would
-                customize my Tumblr and MySpace pages. Little did I know I was
-                using HTML/CSS to do so!
+                Hi! My name is <span>Peter Do</span> (pronounced "Doh!" like
+                Homer Simpson) and I am an aspiring full stack web developer
+                based in Toronto, Ontario. My interest in web development
+                started back in high school when I would customize my Tumblr and
+                MySpace pages. Little did I know I was using HTML/CSS to do so!
               </p>
               <p class="about-text">
-                After high school, I obtained my degree in
-                environmental engineering and spent 5 years in the industry, earning my P.Eng. designation. Ultimately, I decided to switch careers and dive back
-                into the world of web development! I am currently completing the Full Stack Web
-                Development curriculum at
-                <a href="https://www.theodinproject.com/" target="_blank">The Odin Project</a>.
-                I hope to complete it in the near future and join the world of
-                professional web development.
+                After high school, I obtained my degree in environmental
+                engineering and spent 5 years in the industry, earning my P.Eng.
+                designation. Ultimately, I decided to switch careers and dive
+                back into the world of web development! I am currently
+                completing the Full Stack Web Development curriculum at
+                <a href="https://www.theodinproject.com/" target="_blank"
+                  >The Odin Project</a
+                >. I hope to complete it in the near future and join the world
+                of professional web development.
               </p>
               <p class="about-text">
-                Outside of web development, I am an avid disc golfer and enjoy the outdoors as much as I can. I also enjoy playing video games on my PC, getting together with friends, and playing music!
+                Outside of web development, I am an avid disc golfer and enjoy
+                the outdoors as much as I can. I also enjoy playing video games
+                on my PC, getting together with friends, and playing music!
               </p>
             </div>
           </div>
@@ -143,7 +161,6 @@
                 <span class="tech-name">ESLINT</span>
               </div>
             </div>
-            </div>
           </div>
         </div>
       </section>
@@ -151,120 +168,246 @@
       <section id="Projects">
         <div class="container" id="projects-container">
           <div class="subheader" id="projects-header">
-            <h2 class="subtitle" id="projects-title"><span>02.</span> Projects</h2>
+            <h2 class="subtitle" id="projects-title">
+              <span>02.</span> Projects
+            </h2>
           </div>
           <div id="project-cards-container">
             <div class="project-card">
               <div class="project-preview">
-                <img class="project-img" src="./assets/Battleship-IMG.png" alt="preview of Battleship game web app">
-                <img class="project-gif" src="assets/Battleship-GIF.gif" alt="animated GIF of Battleship game web app">
+                <img
+                  class="project-img"
+                  src="./assets/Battleship-IMG.png"
+                  alt="preview of Battleship game web app"
+                />
+                <img
+                  class="project-gif"
+                  src="assets/Battleship-GIF.gif"
+                  alt="animated GIF of Battleship game web app"
+                />
               </div>
               <div class="project-text">
-                <h3 class='project-title'>Battleship</h3>
-                <p class='project-desc'>Javascript/HTML/CSS web application of the classic game Battleship versus AI. This was The Odin Project's capstone vanilla Javascript project.</p>
+                <h3 class="project-title">Battleship</h3>
+                <p class="project-desc">
+                  Javascript/HTML/CSS web application of the classic game
+                  Battleship versus AI. This was The Odin Project's capstone
+                  vanilla Javascript project.
+                </p>
               </div>
               <div class="project-links">
-                <a href="https://nogiback.github.io/Battleship/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                <a href="https://github.com/Nogiback/Battleship" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://nogiback.github.io/Battleship/" target="_blank"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a href="https://github.com/Nogiback/Battleship" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-card">
               <div class="project-preview">
-                <img class="project-img" src="./assets/To-Do-List-IMG.png" alt="preview of To Do List web app">
-                <img class="project-gif" src="assets/To-Do-List-GIF.gif" alt="animated GIF of To Do List web app">
+                <img
+                  class="project-img"
+                  src="./assets/To-Do-List-IMG.png"
+                  alt="preview of To Do List web app"
+                />
+                <img
+                  class="project-gif"
+                  src="assets/To-Do-List-GIF.gif"
+                  alt="animated GIF of To Do List web app"
+                />
               </div>
               <div class="project-text">
-                <h3 class='project-title'>To-Do-List</h3>
-                <p class='project-desc'>Basic To-Do-List web application using HTML/CSS, Javascript, ES6 modules, and webpack. The To-Do-List can add, remove, and edit projects and tasks.</p>
+                <h3 class="project-title">To-Do-List</h3>
+                <p class="project-desc">
+                  Basic To-Do-List web application using HTML/CSS, Javascript,
+                  ES6 modules, and webpack. The To-Do-List can add, remove, and
+                  edit projects and tasks.
+                </p>
               </div>
               <div class="project-links">
-                <a href="https://nogiback.github.io/To-Do-List/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                <a href="https://github.com/Nogiback/To-Do-List" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://nogiback.github.io/To-Do-List/" target="_blank"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a href="https://github.com/Nogiback/To-Do-List" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-card">
               <div class="project-preview">
-                <img class="project-img" src="./assets/Weather-App-IMG.png" alt="preview of weather web app">
-                <img class="project-gif" src="assets/Weather-App-GIF.gif" alt="animated GIF of weather web app">
+                <img
+                  class="project-img"
+                  src="./assets/Weather-App-IMG.png"
+                  alt="preview of weather web app"
+                />
+                <img
+                  class="project-gif"
+                  src="assets/Weather-App-GIF.gif"
+                  alt="animated GIF of weather web app"
+                />
               </div>
               <div class="project-text">
-                <h3 class='project-title'>Weather App</h3>
-                <p class='project-desc'>Basic weather web application using HTML/CSS, Javascript, and weatherAPI. Application provides real-time weather data for searched location.</p>
+                <h3 class="project-title">Weather App</h3>
+                <p class="project-desc">
+                  Basic weather web application using HTML/CSS, Javascript, and
+                  weatherAPI. Application provides real-time weather data for
+                  searched location.
+                </p>
               </div>
               <div class="project-links">
-                <a href="https://nogiback.github.io/Weather-App/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                <a href="https://github.com/Nogiback/Weather-App" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a
+                  href="https://nogiback.github.io/Weather-App/"
+                  target="_blank"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a
+                  href="https://github.com/Nogiback/Weather-App"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-card">
               <div class="project-preview">
-                <img class="project-img" src="./assets/Book-Library-IMG.png" alt="preview of book library web app">
-                <img class="project-gif" src="./assets/Book-Library-GIF.gif" alt="animated GIF of book library web app">
+                <img
+                  class="project-img"
+                  src="./assets/Book-Library-IMG.png"
+                  alt="preview of book library web app"
+                />
+                <img
+                  class="project-gif"
+                  src="./assets/Book-Library-GIF.gif"
+                  alt="animated GIF of book library web app"
+                />
               </div>
               <div class="project-text">
-                <h3 class='project-title'>Book Library</h3>
-                <p class='project-desc'>Simple book library web application using HTML/CSS and Javascript. Book Library allows users to add and remove books onto local storage and keep track of read status.</p>
+                <h3 class="project-title">Book Library</h3>
+                <p class="project-desc">
+                  Simple book library web application using HTML/CSS and
+                  Javascript. Book Library allows users to add and remove books
+                  onto local storage and keep track of read status.
+                </p>
               </div>
               <div class="project-links">
-                <a href="https://nogiback.github.io/Book-Library/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                <a href="https://github.com/Nogiback/Book-Library" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a
+                  href="https://nogiback.github.io/Book-Library/"
+                  target="_blank"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a
+                  href="https://github.com/Nogiback/Book-Library"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-card">
               <div class="project-preview">
-                <img class="project-img" src="./assets/Calculator-IMG.png" alt="preview of calculator web app">
-                <img class="project-gif" src="./assets/Calculator-GIF.gif" alt="animated GIF of book library web app">
+                <img
+                  class="project-img"
+                  src="./assets/Calculator-IMG.png"
+                  alt="preview of calculator web app"
+                />
+                <img
+                  class="project-gif"
+                  src="./assets/Calculator-GIF.gif"
+                  alt="animated GIF of book library web app"
+                />
               </div>
               <div class="project-text">
-                <h3 class='project-title'>Calculator</h3>
-                <p class='project-desc'>Simple calculator web application using HTML/CSS and Javascript. Your everyday calculator! Yes, the style was heavily inspired by the iPhone calculator app.</p>
+                <h3 class="project-title">Calculator</h3>
+                <p class="project-desc">
+                  Simple calculator web application using HTML/CSS and
+                  Javascript. Your everyday calculator! Yes, the style was
+                  heavily inspired by the iPhone calculator app.
+                </p>
               </div>
               <div class="project-links">
-                <a href="https://nogiback.github.io/Calculator/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                <a href="https://github.com/Nogiback/Calculator" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://nogiback.github.io/Calculator/" target="_blank"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a href="https://github.com/Nogiback/Calculator" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
             <div class="project-card">
               <div class="project-preview">
-                <img class="project-img" src="./assets/Etch-A-Sketch-IMG.png" alt="preview of etch-a-sketch web app">
-                <img class="project-gif" src="./assets/Etch-A-Sketch-GIF.gif" alt="animated GIF of etch-a-sketch web app">
+                <img
+                  class="project-img"
+                  src="./assets/Etch-A-Sketch-IMG.png"
+                  alt="preview of etch-a-sketch web app"
+                />
+                <img
+                  class="project-gif"
+                  src="./assets/Etch-A-Sketch-GIF.gif"
+                  alt="animated GIF of etch-a-sketch web app"
+                />
               </div>
               <div class="project-text">
-                <h3 class='project-title'>Etch-A-Sketch</h3>
-                <p class='project-desc'>Fun Etch-A-Sketch web application using HTML/CSS and Javascript. The Etch-A-Sketch allows user to set the grid size and randomize the colors.</p>
+                <h3 class="project-title">Etch-A-Sketch</h3>
+                <p class="project-desc">
+                  Fun Etch-A-Sketch web application using HTML/CSS and
+                  Javascript. The Etch-A-Sketch allows user to set the grid size
+                  and randomize the colors.
+                </p>
               </div>
               <div class="project-links">
-                <a href="https://nogiback.github.io/Etch-A-Sketch/" target="_blank"><i class="fa-solid fa-circle-play"></i></a>
-                <a href="https://github.com/Nogiback/Etch-A-Sketch" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a
+                  href="https://nogiback.github.io/Etch-A-Sketch/"
+                  target="_blank"
+                  ><i class="fa-solid fa-circle-play"></i
+                ></a>
+                <a
+                  href="https://github.com/Nogiback/Etch-A-Sketch"
+                  target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-
       <section id="Contact">
         <div class="container" id="contact-container">
           <div class="subheader" id="contact-header">
-            <h2 class="subtitle" id="contact-title"><span>03.</span> Contact</h2>
+            <h2 class="subtitle" id="contact-title">
+              <span>03.</span> Contact
+            </h2>
           </div>
           <div id="contact-info-container">
             <div id="contact-left">
               <h3>Get In Touch</h3>
-              <p>I am still learning, but my inbox is always open! If you have a questions or just want to say hi, I will do my best to get back to you!</p>
-              <button id='email-link-btn'><a href="mailto:peter.toan.do@gmail.com" target="_blank">
-                <span
-                  >Say Hello <i class="fa-solid fa-envelope"></i
-                ></span>
-              </a></button>
+              <p>
+                I am still learning, but my inbox is always open! If you have a
+                questions or just want to say hi, I will do my best to get back
+                to you!
+              </p>
+              <button id="email-link-btn">
+                <a href="mailto:peter.toan.do@gmail.com" target="_blank">
+                  <span>Say Hello <i class="fa-solid fa-envelope"></i></span>
+                </a>
+              </button>
               <div id="social-links">
-                <a href="https://github.com/Nogiback/" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="https://www.linkedin.com/in/petertoando/" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-                <a href="https://www.instagram.com/peterdope/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://github.com/Nogiback/" target="_blank"
+                  ><i class="fa-brands fa-github"></i
+                ></a>
+                <a
+                  href="https://www.linkedin.com/in/petertoando/"
+                  target="_blank"
+                  ><i class="fa-brands fa-linkedin-in"></i
+                ></a>
+                <a href="https://www.instagram.com/peterdope/" target="_blank"
+                  ><i class="fa-brands fa-instagram"></i
+                ></a>
               </div>
             </div>
             <div id="contact-right">
-              <img src="./assets/230526_-_Pipo_in_Squampton-2092.jpg" alt="Peter standing on top of mountain">
+              <img
+                src="./assets/230526_-_Pipo_in_Squampton-2092.jpg"
+                alt="Peter standing on top of mountain"
+              />
             </div>
           </div>
         </div>

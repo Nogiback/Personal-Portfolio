@@ -47,3 +47,18 @@ function hideGIF(e) {
     img.style.display = 'flex';
   }
 }
+
+// Hamburger menu functionality
+const hamburger = document.querySelector('#hamburger-input');
+
+hamburger.addEventListener('change', transformHeader);
+
+function transformHeader(e) {
+  if (this.checked) {
+    console.log('checked');
+    header.style.height = '240px';
+  } else {
+    console.log('not checked');
+    header.style.height = '90px';
+  }
+}

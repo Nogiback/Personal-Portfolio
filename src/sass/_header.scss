@@ -1,6 +1,5 @@
 #header {
   @include flex(row, center, space-between);
-  //box-shadow: $shadow;
   backdrop-filter: blur(10px);
   padding: 0 3rem;
   height: 90px;
@@ -51,60 +50,132 @@
   }
 }
 
-#tabs-container {
+#nav-container {
   @include flex(row, center, center);
   gap: 2rem;
   background: none;
 
-  button {
-    background: none;
+  a {
+    text-decoration: none;
+    color: $lightgrey;
+    transition: color 0.3s ease-in-out;
     font-size: 0.9rem;
 
-    a {
-      text-decoration: none;
-      color: $lightgrey;
-      transition: color 0.3s ease-in-out;
-
-      span {
-        color: $teal;
+    span {
+       color: $teal;
       }
 
-      &:hover {
-        color: $teal;
-        border-bottom: 1px solid $teal;
-      }
+    &:hover {
+      color: $teal;
+      border-bottom: 1px solid $teal;
     }
   }
 }
 
-.active {
-  color: $teal;
-  border-bottom: 1px solid $teal;
-}
-
-#about-tab {
+.nav-link {
   position: relative;
   opacity: 0%;
   animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
+}
+
+#about-link {
   animation-delay: 0;
 }
 
-#projects-tab {
-  position: relative;
-  opacity: 0%;
-  animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
-  animation-delay: 0.1s;
+#projects-link {
+  animation-delay: 0.15s;
 }
 
-#contact-tab {
-  position: relative;
-  opacity: 0%;
-  animation: fadeIn 1.5s forwards, scrollDown 1.5s forwards;
-  animation-delay: 0.2s;
+#contact-link {
+  animation-delay: 0.3s;
+}
+
+#hamburger-input{
+  display: none;
+}
+
+#hamburger-menu {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 50px;
+    height: 50px;
+    display: none;
+    border: none;
+    padding: 0px;
+    margin: 0px;
+    transition: all 1s ease-in-out;
+    background: linear-gradient(
+      to bottom,
+      $black, $black 10%, 
+      $lightgrey 10%, $lightgrey 20%, 
+      $black 20%, $black 40%, 
+      $lightgrey 40%, $lightgrey 50%, 
+      $black 50%, $black 70%, 
+      $lightgrey 70%, $lightgrey 80%,
+      $black 80%, $black 100%
+    );
+    
+    &:hover {
+      background: linear-gradient(
+      to bottom,
+      $black, $black 10%, 
+      $teal 10%, $teal 20%, 
+      $black 20%, $black 40%, 
+      $teal 40%, $teal 50%, 
+      $black 50%, $black 70%, 
+      $teal 70%, $teal 80%,
+      $black 80%, $black 100%
+    );
+    }
+}
+
+#hamburger-menu #sidebar-menu {
+    visibility: hidden;
+    position: fixed;
+    top: 90px;
+    left: 100%;
+    width: 100%;
+    height: 150px;
+    transition: 0.3s;
+    padding: 0px 10px;
+    box-sizing: border-box;
+    //background-color: $black;
+}
+
+#hamburger-menu ul {
+  padding-left: 0px;
+}
+
+#hamburger-menu li {
+  list-style-type: none;
+  line-height: 3rem;
+  text-align: right;
+}
+
+#hamburger-menu a {
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+#hamburger-input:checked + #hamburger-menu #sidebar-menu {
+  visibility: visible;
+  left: 0;
+}
+
+
+@media only screen and (max-width: 750px) {
+  .nav-link {
+    display: none;
+  }
+  #hamburger-menu {
+    display: inline;
+  }
 }
 
 @media only screen and (max-width: 450px){
-  #header {
-    gap: 2rem;
+  #tabs-container {
+    display: none;
   }
 }
+
