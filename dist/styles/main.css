@@ -298,7 +298,7 @@ footer {
   animation-delay: 3s;
 }
 
-#scroll-btn {
+#hero-btn {
   position: relative;
   padding: 0.6rem;
   border: 2px solid rgb(29, 215, 225);
@@ -311,17 +311,14 @@ footer {
   opacity: 0%;
   animation: fadeIn 1s forwards;
   animation-delay: 4s;
-}
-#scroll-btn a {
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s;
 }
-#scroll-btn:hover {
+#hero-btn:hover {
   background-color: rgb(29, 215, 225);
   color: rgb(34, 40, 49);
 }
-#scroll-btn:active {
+#hero-btn:active {
   top: 2px;
 }
 
@@ -453,9 +450,6 @@ footer {
   border-radius: 5px;
   font-family: "Red Hat Display", sans-serif;
 }
-.project-card:hover {
-  top: -5px;
-}
 
 .project-img,
 .project-gif {
@@ -485,7 +479,6 @@ footer {
 .project-text .project-desc {
   text-align: center;
   font-size: 1rem;
-  height: 80px;
 }
 
 .project-links {
@@ -500,8 +493,15 @@ footer {
   color: rgb(225, 223, 223);
   font-size: 2.5rem;
   transition: color 0.3s ease-in-out;
+  display: flex;
 }
 .project-links a:hover {
+  color: rgb(29, 215, 225);
+}
+.project-links a:focus {
+  outline: none;
+}
+.project-links a:focus-within {
   color: rgb(29, 215, 225);
 }
 .project-links i {
@@ -571,7 +571,7 @@ footer {
 
 #email-link-btn {
   position: relative;
-  padding: 0.6rem;
+  padding: 0.5rem 1rem;
   border: 2px solid rgb(29, 215, 225);
   border-radius: 5px;
   background: none;
@@ -580,11 +580,8 @@ footer {
   transition: all 0.3s ease-in;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.6);
   font-family: "Noto Sans Mono", sans-serif;
-}
-#email-link-btn a {
   text-decoration: none;
   color: inherit;
-  transition: transform 0.2s;
 }
 #email-link-btn:hover {
   background-color: rgb(29, 215, 225);
