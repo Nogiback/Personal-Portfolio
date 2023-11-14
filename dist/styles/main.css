@@ -11,6 +11,7 @@
   font: inherit;
   box-sizing: inherit;
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
 }
 
 body {
@@ -28,17 +29,6 @@ section {
   min-height: 100vh;
   width: 100%;
   margin: 3rem 0;
-}
-
-footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  font-size: 0.8rem;
-  opacity: 50%;
-  margin-bottom: 2rem;
 }
 
 .container {
@@ -76,6 +66,20 @@ footer {
 }
 .subtitle span {
   color: rgb(29, 215, 225);
+}
+
+.spacer {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url("../../dist/assets/layered-waves-haikei.svg");
+}
+
+.layer2 {
+  background-image: url("../../dist/assets/layered-waves-haikei-top.svg");
 }
 
 @keyframes fadeIn {
@@ -303,7 +307,7 @@ footer {
   padding: 0.6rem;
   border: 2px solid rgb(29, 215, 225);
   border-radius: 5px;
-  background: none;
+  background: rgb(34, 40, 49);
   color: rgb(225, 223, 223);
   cursor: pointer;
   transition: all 0.3s ease-in;
@@ -322,6 +326,17 @@ footer {
   top: 2px;
 }
 
+@media only screen and (max-width: 500px) {
+  #greeting {
+    font-size: 1rem;
+  }
+  #name {
+    font-size: 4rem;
+  }
+  #tagline {
+    font-size: 1rem;
+  }
+}
 #about-details-container {
   display: flex;
   flex-direction: row;
@@ -528,6 +543,16 @@ footer {
     height: 150px;
   }
 }
+#Contact {
+  flex-direction: column;
+  gap: 10rem;
+  margin-bottom: 0;
+}
+#Contact #footer {
+  color: rgb(34, 40, 49);
+  font-size: 0.8rem;
+}
+
 #contact-info-container {
   display: flex;
   flex-direction: row;
@@ -574,7 +599,7 @@ footer {
   padding: 0.5rem 1rem;
   border: 2px solid rgb(29, 215, 225);
   border-radius: 5px;
-  background: none;
+  background: rgb(34, 40, 49);
   color: rgb(225, 223, 223);
   cursor: pointer;
   transition: all 0.3s ease-in;

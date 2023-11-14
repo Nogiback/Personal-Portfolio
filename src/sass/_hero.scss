@@ -36,7 +36,7 @@
   padding: 0.6rem;
   border: 2px solid $teal;
   border-radius: 5px;
-  background: none;
+  background: $black;
   color: $lightgrey;
   cursor: pointer;
   transition: all 0.3s ease-in;
@@ -54,5 +54,20 @@
 
   &:active {
     top: 2px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+
+  #greeting {
+    font-size: 1rem;
+  }
+  
+  #name {
+    font-size: 4rem;
+  }
+  
+  #tagline{
+    font-size: 1rem;
   }
 }

@@ -39,6 +39,7 @@ $font-weights: (
   font: inherit;
   box-sizing: inherit;
   scroll-behavior: smooth;
+  scroll-padding-top: 1rem;
 }
 
 body {
@@ -53,14 +54,6 @@ section {
   min-height: 100vh;
   width: 100%;
   margin: 3rem 0;
-}
-
-footer {
-  @include flex(row, center, center);
-  width: 100%;
-  font-size: 0.8rem;
-  opacity: 50%;
-  margin-bottom: 2rem;
 }
 
 .container {
@@ -94,6 +87,20 @@ footer {
   span {
     color: $teal;
   }
+}
+
+.spacer { 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.layer1 {
+  background-image: url('../../dist/assets/layered-waves-haikei.svg');
+}
+
+.layer2 {
+  background-image: url('../../dist/assets/layered-waves-haikei-top.svg');
 }
 
 @keyframes fadeIn {
